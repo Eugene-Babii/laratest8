@@ -1,19 +1,17 @@
 /*
 Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
-       Load path: F:/onedrive - itstep/install/openserver/domains/laratest8/resources/sass
-        on line 20 of F:\onedrive - itstep\install\openserver\domains\laratest8\resources\sass\app.scss
+       Load path: F:/onedrive - itstep/install/openserver/domains/laratest8/vendor/laravel/ui/src/Presets/bootstrap-stubs
+        on line 8 of F:\onedrive - itstep\install\openserver\domains\laratest8\vendor\laravel\ui\src\Presets\bootstrap-stubs\app.scss
 
-15: @import "footer";
-16: @import "bootstrap-overrides";
-17: 
-18: 
-19: // Bootstrap
-20: @import '~bootstrap/scss/bootstrap';
-21: 
-22: //my
+3: 
+4: // Variables
+5: @import 'variables';
+6: 
+7: // Bootstrap
+8: @import '~bootstrap/scss/bootstrap';
 
 Backtrace:
-F:\onedrive - itstep\install\openserver\domains\laratest8\resources\sass\app.scss:20
+F:\onedrive - itstep\install\openserver\domains\laratest8\vendor\laravel\ui\src\Presets\bootstrap-stubs\app.scss:8
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -50,4 +48,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.\A        Load path: F:/onedrive - itstep/install/openserver/domains/laratest8/resources/sass\A         on line 20 of F:\onedrive - itstep\install\openserver\domains\laratest8\resources\sass\app.scss\A \A 15: @import \"footer\";\A 16: @import \"bootstrap-overrides\";\A 17: \A 18: \A 19: // Bootstrap\A 20: @import '~bootstrap/scss/bootstrap';\A 21: \A 22: //my"; }
+  content: "Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.\A        Load path: F:/onedrive - itstep/install/openserver/domains/laratest8/vendor/laravel/ui/src/Presets/bootstrap-stubs\A         on line 8 of F:\onedrive - itstep\install\openserver\domains\laratest8\vendor\laravel\ui\src\Presets\bootstrap-stubs\app.scss\A \A 3: \A 4: // Variables\A 5: @import 'variables';\A 6: \A 7: // Bootstrap\A 8: @import '~bootstrap/scss/bootstrap';"; }
