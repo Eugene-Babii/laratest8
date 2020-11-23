@@ -5,21 +5,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Lavender</title>
+    <!-- <title>{{ config('app.name', 'Lavender') }}</title> -->
+    <title>Лаванда</title>
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Styles -->
-    <link href="../../public/css/app.css" rel="stylesheet">
+    <!-- <link href="../../public/css/app.css" rel="stylesheet"> -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    <style>
-
-    </style>
-
-    <style>
-
-    </style>
 </head>
 
 <body class="antialiased">
@@ -27,12 +30,12 @@
         @if (Route::has('login'))
         <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
             @auth
-            <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
+            <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Главная</a>
             @else
-            <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
+            <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Вход</a>
 
             @if (Route::has('register'))
-            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Регистрация</a>
             @endif
             @endauth
         </div>
@@ -142,72 +145,96 @@
 
 
 
-    <h1 class="site-heading text-center text-white d-none d-lg-block">
-        <!-- <span class="site-heading-upper text-primary mb-3">A Free Bootstrap 4 Business Theme</span> -->
+    <h1 class="site-heading text-center text-primary d-none d-lg-block">
         <span class="site-heading-lower">Лаванда в Запорожье</span>
     </h1>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
         <div class="container">
-            <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+            <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Лаванда в Запорожье</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item active px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+                        <a class="nav-link text-uppercase text-expanded" href="index.html">Главная
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+                        <a class="nav-link text-uppercase text-expanded" href="about.html">О нас</a>
                     </li>
                     <li class="nav-item px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
+                        <a class="nav-link text-uppercase text-expanded" href="products.html">Правила</a>
                     </li>
                     <li class="nav-item px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
+                        <a class="nav-link text-uppercase text-expanded" href="store.html">Контакты</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="page-section clearfix">
+    <section class="page-section">
         <div class="container">
-            <div class="intro">
-                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/lavender/lavanda.jpg" alt="">
-                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-                    <h2 class="section-heading mb-4">
-                        <span class="section-heading-upper">Fresh Coffee</span>
-                        <span class="section-heading-lower">Worth Drinking</span>
-                    </h2>
-                    <p class="mb-3">Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients.
-                        Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!
-                    </p>
-                    <div class="intro-button mx-auto">
-                        <a class="btn btn-primary btn-xl" href="#">Visit Us Today!</a>
+            <div class="card mb-3" style="border: 2px solid #7e179a">
+                <div class="row no-gutters bg-primary">
+                    <div class="col-md-5 img-center p-5">
+                        <img src="/images/purple-flower.jpg" class="card-img round" alt="foto of lavender">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Аренда лавандового поля</h5>
+                            <p class="mb-3"> В 2020 году открывается аренда лавандового поля для фотосесий.</p>
+                            <p>Попасть на цветущее лавандовое поле можно
+                                только по предварительному бронированию. </p>
+                            <p> Бронирование открывается за 2-3 недели до начала цветения лаванлды. </p>
+                            <p> Стоимость аренды поля - 500 грн/час. </p>
+                            <p> Режим роботи поля: з 5.00 до 21.00. </p>
+                            <p> Бронирование только онлайн после 100% предоплаты. </p>
+                            <p> Перед бронированием просим ознакомиться с правилами аренды поля! </p>
+                            <div class="intro-button mx-auto">
+                                <a class="btn btn-secondary text-white btn-signup" href="#">Записаться</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <section class="page-section cta">
+
+
+    <section class="page-section">
         <div class="container">
             <div class="row">
-                <div class="col-xl-9 mx-auto">
-                    <div class="cta-inner text-center rounded">
-                        <h2 class="section-heading mb-4">
-                            <span class="section-heading-upper">Our Promise</span>
-                            <span class="section-heading-lower">To You</span>
-                        </h2>
-                        <p class="mb-0">When you walk into our shop to start your day, we are dedicated to providing you with
-                            friendly service, a welcoming atmosphere, and above all else, excellent products made with the highest
-                            quality ingredients. If you are not satisfied, please let us know and we will do whatever we can to make
-                            things right!</p>
+                <div class="col mx-auto">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" style="border: 2px solid #7e179a">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/images/carousel/horse`n`girl.jpg" class="d-block w-100" alt="foto1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/carousel/800x18nina.jpg" class="d-block w-100" alt="foto2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/carousel/lavanda.jpg" class="d-block w-100" alt="foto3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/carousel/lavender-flower-field-under-pink-sky-1166209.jpg" class="d-block w-100" alt="foto4">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -216,7 +243,7 @@
 
     <footer class="footer text-faded text-center py-5">
         <div class="container">
-            <p class="m-0 small">Copyright &copy; Your Website 2019</p>
+            <p class="m-0 small">Copyright &copy; B&amp;G 2020</p>
         </div>
     </footer>
 </body>
