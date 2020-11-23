@@ -48,7 +48,7 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'onavt_27210560_lavenderdb'),
+            'database' => env('DB_DATABASE', 'onavt_27210560_laratest8db'),
             'username' => env('DB_USERNAME', 'onavt_27210560'),
             'password' => env('DB_PASSWORD', '2homOBC5'),
             'unix_socket' => env('DB_SOCKET', ''),
