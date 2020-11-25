@@ -4,12 +4,13 @@
 // Variables
 @import 'variables';
 
-
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-//my
+//jQuery
+@import '~jquery-ui/themes/base/all.css';
 
+//my
 @import "mixins";
 @import "global";
 @import "navbar";
