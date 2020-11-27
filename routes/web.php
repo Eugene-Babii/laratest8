@@ -20,6 +20,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/rules', function () {
+    return view('rules');
+});
+
 Route::get('/migraterefresh', function () {
     $exitCode = Artisan::call('migrate:refresh', [
         '--force' => true,
