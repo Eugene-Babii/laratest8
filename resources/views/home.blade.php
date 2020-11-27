@@ -23,6 +23,7 @@
                                 <fieldset>
                                     <label for="timebegin">Время начала:</label>
                                     <select name="timebegin" id="timebegin">
+                                        <option>4-00</option>
                                         <option>5-00</option>
                                         <option>6-00</option>
                                         <option>7-00</option>
@@ -39,7 +40,6 @@
                                         <option>18-00</option>
                                         <option>19-00</option>
                                         <option>20-00</option>
-                                        <option>21-00</option>
                                     </select>
                                 </fieldset>
                             </div>

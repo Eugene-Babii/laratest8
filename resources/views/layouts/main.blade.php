@@ -53,7 +53,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
         <div class="container">
-            <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Лаванда в Запорожье</a>
+            <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="/">Лаванда в Запорожье</a>
 
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,17 +63,17 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item active px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="/">Главная
-                            <span class="sr-only">(current)</span>
+                            <!-- <span class="sr-only">(current)</span> -->
                         </a>
                     </li>
                     <li class="nav-item px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="about.html">О нас</a>
+                        <a class="nav-link text-uppercase text-expanded" href="price">Стоимость</a>
                     </li>
                     <li class="nav-item px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="rules">Правила</a>
                     </li>
                     <li class="nav-item px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="store.html">Контакты</a>
+                        <a class="nav-link text-uppercase text-expanded" href="contacts">Контакты</a>
                     </li>
                 </ul>
             </div>

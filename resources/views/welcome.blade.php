@@ -20,7 +20,7 @@
                         <p> Бронирование только онлайн после 100% предоплаты. </p>
                         <p> Перед бронированием просим ознакомиться с правилами аренды полюшка! </p>
                         <div class="intro-button mx-auto">
-                            <a class="btn btn-secondary text-white btn-signup" href="#">Записаться</a>
+                            <a class="btn btn-secondary text-white btn-signup" href="home">Записаться</a>
                         </div>
                     </div>
                 </div>

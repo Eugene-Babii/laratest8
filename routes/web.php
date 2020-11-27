@@ -24,6 +24,14 @@ Route::get('/rules', function () {
     return view('rules');
 });
 
+Route::get('/price', function () {
+    return view('price');
+});
+
+Route::get('/contacts', function () {
+    return view('contacts');
+});
+
 Route::get('/migraterefresh', function () {
     $exitCode = Artisan::call('migrate:refresh', [
         '--force' => true,
